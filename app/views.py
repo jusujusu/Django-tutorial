@@ -3,8 +3,9 @@ from django.shortcuts import render
 from app.models import Post
 
 # Create your views here.
-def index(request : HttpRequest) -> HttpResponse:
 
+# 목록
+def index(request : HttpRequest) -> HttpResponse:
 
     # qs = [
     #     {"id": 1, "title": "post #1"},

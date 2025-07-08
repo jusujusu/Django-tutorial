@@ -1,14 +1,26 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>Django Page</title>
-</head>
-<body>
+<!--템플릿 상속 적용-->
+{% extends "app/base.html" %}
 
-  <h1>Post Detail : {{post.title}} </h1>
+{% block content%}
+    <h2>Post Detail : {{post.title}} </h2>
+    {{post.content}}
+    <hr>
+    <a href="/app/">목록으로</a>
 
   {{post.content}}
+{% endblock %}
 
-</body>
-</html>
+<!--<!DOCTYPE html>-->
+<!--<html lang="ko">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Django Page</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--  <h1>Post Detail : {{post.title}} </h1>-->
+
+<!--  {{post.content}}-->
+
+<!--</body>-->
+<!--</html>-->
